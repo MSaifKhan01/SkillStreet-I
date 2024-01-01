@@ -11,7 +11,7 @@ Welcome to SkillStreet-I! This Node.js application serves as a backend for user 
 - [Technologies Used](#Technologies-Used)
 - [Swagger Documentation](#Swagger-Documentation)
 - [Testing](#Testing)
-- [API Endpoints](#Endpoints)
+- [API Endpoints](#API-Endpoints)
 - [User-Note Relationship](#User-Note-Relationship)
 
 
@@ -69,7 +69,7 @@ The application uses Jest for testing. Run the tests using the following command
 npm test
 ```
 
-## API Endpoints
+## API-Endpoints
 
 ### User Management
 
