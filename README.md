@@ -12,7 +12,8 @@ Welcome to SkillStreet-I! This Node.js application serves as a backend for user 
 - [Swagger Documentation](#Swagger-Documentation)
 - [Testing](#Testing)
 - [API Endpoints](#Endpoints)
--[User-Note Relationship](#User-Note Relationship)
+- [User-Note Relationship](#User-Note-Relationship)
+
 
 ## Installation
 
@@ -35,6 +36,7 @@ Create a `.env` file in the root directory and add the following:
 
 ```env
 JWT_Secret=your_secret_key
+mongoUrl=your database link
 ```
 
 4. Run the server.
@@ -120,7 +122,7 @@ npm test
 - **Security:** Auth
 - **Description:** Delete a note.
 
-## User-Note Relationship
+## User-Note-Relationship
 
 - Users can create, update, and delete their own notes.
 - Each note is associated with a specific user.
