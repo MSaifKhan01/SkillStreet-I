@@ -6,7 +6,7 @@ const { app }=require('../index');
 
 
 const testUser ={
-  email: 'test02@gamil.com',
+  email: 'test03@gamil.com',
   phoneNumber: '1234567890',
   name: 'Test User',
   password: 'testpassword',

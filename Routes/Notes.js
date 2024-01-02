@@ -64,9 +64,11 @@ const Notes=await NoteModel.find({userID:decoded.userID}).populate(
 );
 if(Notes.length===0){
 res.status(404).send({msg:"Notes not Found"});
-}
+}else{
 //console.log(Notes)
 res.status(200).send(Notes);
+}
+
 }catch(err){
     res.status(500).send({error:err.message||"Internal Server Error"});
 }
