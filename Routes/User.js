@@ -80,10 +80,12 @@ userRouter.post("/Login", async(req, res)=>{
     const UserPresent= await UserModel.findOne(query);
    
     if(UserPresent){
+      
       bcrypt.compare(password, UserPresent.password, (err, result) => {
         if(result){
           const Token= jwt.sign(
             {userID:UserPresent._id},
+
             process.env.JWT_Secret,
             {expiresIn:"3h" }
           );
